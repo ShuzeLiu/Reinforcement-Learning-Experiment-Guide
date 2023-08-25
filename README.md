@@ -10,19 +10,19 @@
 * Understand how to generate figures, manage data tables, use filter and group tools, and download data using wandb API.
 
 ## Run Python in Anaconda on UVA CS server
-* Be sure to run python in a specialized virtual environment. Otherwise, dependencies will be easily messed up. 
+* Be sure to run Python in a specialized virtual environment. Otherwise, dependencies will be easily messed up. 
 * [Anaconda Guide](https://www.anaconda.com/)
 * [UVA CS server Guide](https://www.cs.virginia.edu/wiki/doku.php?id=start)
   
 
-## Run python on the server using Slurm
+## Run Python on the server using Slurm
 * [Slurm Guide](https://slurm.schedmd.com/documentation.html)
 * [Example from Stanford](https://rcpedia.stanford.edu/topicGuides/jobArrayPythonExample.html)
 * Reference script
 ```
 #!/bin/bash
 
-# Example of running python script with a job array
+# Example of running Python script with a job array
 
 #SBATCH --job-name=stswyuhu
 #SBATCH --exclude=adriatic[01-04],cheetah01,cheetah02,cheetah03,jaguar01,jaguar02,jaguar04,jaguar05,jaguar06,lotus,lynx[01-02] # This line exludes high-performance GPU. Because we do not use GPU on most tasks, we should courtesy left them to other people.
