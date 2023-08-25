@@ -27,7 +27,7 @@
 #SBATCH --job-name=stswyuhu
 #SBATCH --exclude=adriatic[01-04],cheetah01,cheetah02,cheetah03,jaguar01,jaguar02,jaguar04,jaguar05,jaguar06,lotus,lynx[01-02] # This line exludes high-performance GPU. Because we do not use GPU on most tasks, we leave them to other people.
 #SBATCH --partition=nolim,main,gnolim,gpu
-#SBATCH --gpus-per-node=0                # 0 GPU per task. Use GPU unless you have more than 10^5 data to intensively parallel compute.
+#SBATCH --gpus-per-node=0                # 0 GPU per task. Use GPU only when you have more than 10^5 data to intensively parallel compute.
 #SBATCH --cpus-per-task=4                # 4 CPU cores per task
 #SBATCH --mem=4G   #Adjust based on demands.
 #SBATCH --time=4-00:00:00
