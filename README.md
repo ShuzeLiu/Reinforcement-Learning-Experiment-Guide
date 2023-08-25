@@ -28,7 +28,7 @@
 #SBATCH --exclude=adriatic[01-04],cheetah01,cheetah02,cheetah03,jaguar01,jaguar02,jaguar04,jaguar05,jaguar06,lotus,lynx[01-02] # This line exludes high-performance GPU. Because we do not use GPU on most tasks, we should courtesy left them to other people.
 #SBATCH --partition=nolim,main,gnolim,gpu
 #SBATCH --gpus-per-node=0
-#SBATCH --cpus-per-task=4                 # 4 CPU core per task
+#SBATCH --cpus-per-task=4                 # 4 CPU cores per task
 #SBATCH --mem=4G   #Adjust based on demands
 #SBATCH --time=4-00:00:00
 #SBATCH --output hello.out            
