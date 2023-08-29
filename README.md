@@ -40,7 +40,7 @@ srun wandb agent rl_research/grid_ROA/stswyuhu
 
 ## Be able to run multiple tasks at the same time on the server with different parameters.
 * Achieve this with wandb and Slurm.
-* Be sure to leave enough computational power (especially GPU) to others.
+* Be sure to leave enough computational power (especially GPUs) to others.
 
 ## Reference Code Repo
 * [CleanRL](https://github.com/vwxyzjn/cleanrl): Excellent and systematic guide to start RL programming.
